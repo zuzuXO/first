@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+</head>
+<body>
+    <form action="acceuil.html">
+        <h1 align="center">INSCRIPTION AU CYCLE D'INGENIEUR </h1>
+        <fieldset>
+            <table align="center">
+                <legend align="center">informations personnellles</legend>
+                <tr>
+                    <td><label for="name">votre nom</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="votre nom"></td>
+                </tr>  
+                <tr>
+                <td><label for="prenom"> votre prenom</label></td>
+                <td><input type="text" id="prenom" name="prenom" placeholder="votre prenom"></td>
+                </tr>
+                <tr>
+                <td><label for="age">votre age</label></td>
+                <td><input type="number" id="age" name="age" min="18" max="200" placeholder="votre age"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">date de naissance</label></td>
+                    <td><input type="date" id="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="adresse">votre adresse</label></td>
+                    <td><textarea name="adresse" id="adresse" placeholder="don't forget your adress"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="mdp">mot de passe</label></td>
+                    <td><input type="password" id="mdp" name="mdp" required></td>
+                </tr>
+                <tr>
+                    <td><label for="remdp">retapez votre mot de passe</label></td>
+                    <td><input type="password" id="remdp" name="remdp" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">votre email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="votre email"></td>
+                </tr>
+                <tr>
+                    <td><label for="url">votre site</label></td>
+                    <td><input type="url" id="url" name="url" placeholder="URL de votre site"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+                <legend align="center">gestions des groupes et des options</legend>
+            <table align="center">
+                <tr>
+                <td><p>votre groupe  :</p></td>
+                <td><label for="groupe1">groupe1</label></td>
+                <td><input type="radio" id="groupe1" name="groupe1"></td>
+                <td><label for="groupe2">groupe2</label></td>
+                <td><input type="radio" id="groupe2" name="groupe2"></td>
+                <td><label for="groupe3">groupe3</label></td>
+                <td><input type="radio" id="groupe3" name="groupe3"></td>
+                </tr>
+                <br>
+            </table>
+            <br>
+            <table align="center">   
+                <tr> 
+                    <td><label for="carte">numero de carte etudiant</label></td>
+                    <td><input type="text" id="carte" name="carte" placeholder="numero de votre carte"></td>
+                </tr>
+            </table>
+            <br>
+            <table align="center"> 
+                <tr>
+                    <td><label for="option">choisissez les options que vous désirez</label></td>
+                    <td>
+                        <select id="option">
+                            <option value="J2ee">J2ee</option>
+                            <option value="android">Android</option>
+                            <option value="net">Net</option>
+                            <option value="html">HTML5</option>
+                            <option value="flex">flex</option>
+                        </select>
+                    </td>   
+                </tr>
+            </table>
+            <div align="center">
+            <textarea name="regex" id="regex"></textarea>
+            <input type="checkbox" align="center" name="regex" id="regex" pattern=" [I][N][S][A][T][0-9]{4}"></input>
+            </div>
+            </fieldset>
+            <div align="center">
+            <button type="submit">valider</button>
+            <button type="reset"> reinitialiser</button>
+            </div>
+    </form>
+</body>
+</html>
